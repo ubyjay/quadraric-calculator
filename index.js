@@ -1,3 +1,4 @@
+alert("PLEASE INPUT THE COEFFICIENT OF A,B,C. BELOW 😊")
 const button = document.getElementById('button')
 let vertexCoords = document.getElementById('vertexCoords')
 let oneBelow = document.getElementById('oneBelow')
@@ -20,7 +21,7 @@ const calculate = () => {
     let twoA = 2 * a
     // if the input values arent complete
     if(!a || !b || !c){
-        alert('Missing Some Values');
+        alert('Missing Some Values 😢');
     } else{
         // will be using the Quadratic formulae 
         let bSquared = Math.pow(b,2)
@@ -55,7 +56,6 @@ const calculate = () => {
         twoBelow.innerHTML = `2 below: (${below2X.toFixed(2)}, ${below2Y.toFixed(2)})`
         oneAbove.innerHTML =  `1 above: (${above1X.toFixed(2)}, ${above1Y.toFixed(2)})`
         twoAbove.innerHTML =  `2 above: (${above2X.toFixed(2)}, ${above2Y.toFixed(2)})` 
-
         if(c=== 0){
             equation.innerHTML = `${a}x^2 + ${a}x`
         }

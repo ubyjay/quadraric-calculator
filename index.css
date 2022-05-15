@@ -5,8 +5,20 @@
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
 }
+
 .content{
-    display: none;
+    display: block;
+    color: #124e92;
+    position: absolute;
+    top: 6%;  
+    z-index: 2;
+}
+.content-h1{
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 10px 0 30px;
 }
 .content1{
     display: none;
@@ -15,12 +27,14 @@ h1{
     display: none;
 }
 .media{
+    display: inline-block;
+    justify-content: center;
     font-weight: bolder;
 }
 .hero{
     width: 100%;
     height: 100vh;
-    background-image: url(./images/background.png);
+    background-image: url(./images/mathematics.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -31,31 +45,39 @@ h1{
     place-items: center;
     width: 34.5%;
     height: 402.5px;
-    background: transparent;
+    background: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
-    /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 }
 
 .inputContainer{
    position: relative;
+   width: 80%;
    margin-bottom: 10px;
    margin-top: -40px;
 
 }
 .inputContainer > input{
+    width: 100%;
     margin-bottom: 10px!important;
-    outline: none !important;
+    /* outline: none !important; */
     cursor: pointer !important ;
     transform: scale(0.85) !important;
     padding: 5px !important;
     border-radius: 10px;
-    border: none;
+    border:2px solid black;
     
 }
+.inputContainer > ::placeholder{
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+}
+
 #info{
     display: grid;
     grid-template-columns: repeat(6,auto);
@@ -68,7 +90,7 @@ h1{
 
 }
 #info > span{
-    color: #fbfcfd;
+    color: black;
     font-weight: bolder;
     font-size: 0.8rem;
     text-align: center;
@@ -76,18 +98,19 @@ h1{
 /* button */
 #button{
     position: absolute;
-    left: 27%;
+    left: 19%;
+    right: 20%;
     border: none;
     cursor: pointer;
     transition: 0.3s;
     width: 60%;
     height: 25px;
     border-radius: 10px;
-    background: rgb(0, 61, 76);
+    background: #124e92;
     color: white;
 }
 #button:hover{
-    background: rgb(15, 121, 143);
+    background: #187aeb;
     transition: 0.2s;
 }
 /* ANIMATION */
@@ -103,6 +126,7 @@ h1{
     position: absolute;
     bottom: -60px;
 }
+
 .yo{
     object-fit:cover;
     border-radius: 50%;
@@ -153,15 +177,7 @@ h1{
 }
 /* MEDIA QUERIES */
 @media(min-width: 1030px){
-    .content{
-        display: block;
-        color: #fbfcfd;
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        transform: translateY(-50%);
-        z-index: 2;
-    }
+   
     .content1{
         display: block;
         color: #fbfcfd;
@@ -172,6 +188,7 @@ h1{
         z-index: 2;
     }
     h1{
+        text-align: center;
         display: block;
         font-size: 40px;
         line-height: 40px;
@@ -186,8 +203,11 @@ h1{
     .inputContainer > input{
         width: 100%;
     }
-    .inputContainer > ::placeholder{
+    .content-h1{
         text-align: center;
-        font-size: larger;
+        display: block;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px 0 30px;
     }
 }
