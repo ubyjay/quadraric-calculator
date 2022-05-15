@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500&display=swap');
 *,::before,::after{
-    margin: none;
-    padding: none;
+    margin: 0 ;
+    padding: 0 ;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
 }
@@ -61,21 +61,22 @@ h1{
     grid-template-columns: repeat(6,auto);
     position: absolute;
     left: 55%;
-    top: 80%;
+    top: 84%;
     transform: translate(-50%,-50%) translateX(-10px);
     gap: 10px;
     width: 100%;
 
 }
 #info > span{
-    font-size: 0.6rem;
+    color: #fbfcfd;
+    font-weight: bolder;
+    font-size: 0.8rem;
     text-align: center;
 }
 /* button */
 #button{
     position: absolute;
-    left: 22%;
-    background: none;
+    left: 27%;
     border: none;
     cursor: pointer;
     transition: 0.3s;
@@ -177,6 +178,7 @@ h1{
         margin: 10px 0 30px;
     }
 }
+
 @media(max-width: 521px) {
     .media{
         display: none;
