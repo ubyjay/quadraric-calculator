@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Quadratic Calculator</title>
 </head>
 <body>
-<div id="container">
+    <div class="hero">
+        <div class="content">
+            <h1>Quadratic Calculator</h1>
+        </div>
+
+
+<div id="container" data-aos="flip-right">
     <div class="inputContainer">
+       
         
             
                <span class="media">A =</span>  <input type="number" id="aValue" class="col-10"   placeholder="Coefficient A">
@@ -46,6 +54,21 @@
         </div>
     
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">  </script>
+        <div class="bubbles">
+            <img src="../images/bubble.png" alt="">
+            <img class="yo" src="../images/calculus (2).jpg" alt="">
+            <img src="../images/bubble.png" alt="">
+            <img class="yo"  src="../images/calculus (2).jpg" alt="">
+            <img src="../images/bubble.png" alt="">
+            <img class="yo" src="../images/calculus1.jpg" alt="">
+            <img src="../images/bubble.png" alt="">
+        </div>
+        <div class="content1">
+            <h1>By Uby</h1>
+        </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init()</script>
 </body>
 </html>
